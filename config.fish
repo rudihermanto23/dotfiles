@@ -1,4 +1,4 @@
-set -gxp PATH /usr/local/opt/python@3.9/libexec/bin /usr/local/sbin $HOME/go/bin
+set -gxp PATH /usr/local/opt/python@3.9/libexec/bin /usr/local/sbin $HOME/go/bin /opt/homebrew/bin
 set -gx GOBIN $HOME/go/bin
 set -gx EDITOR vim
 
