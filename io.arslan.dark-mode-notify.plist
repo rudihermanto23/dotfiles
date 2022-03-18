@@ -8,9 +8,9 @@
     <key>KeepAlive</key>
     <true/>
     <key>StandardErrorPath</key>
-    <string>/Users/fatih/.dark-mode-notify-stderr.log</string>
+    <string>/Users/rudihermanto/.dark-mode-notify-stderr.log</string>
     <key>StandardOutPath</key>
-    <string>/Users/fatih/.dark-mode-notify-stdout.log</string>
+    <string>/Users/rudihermanto/.dark-mode-notify-stdout.log</string>
     <key>ProgramArguments</key>
     <array>
        <string>/usr/local/bin/dark-mode-notify</string>

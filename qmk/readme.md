@@ -9,13 +9,13 @@ qmk setup -b develop
 
 # copy the custom keymaps into the keymaps folder
 cd ~/qmk_firmware/
-cp -r ~/Code/dotfiles/qmk/ keyboards/kinesis/keymaps/fatih
+cp -r ~/Code/dotfiles/qmk/ keyboards/kinesis/keymaps/rudihermanto
 
 # compile the firmware
-qmk compile -kb kinesis/kint41 -km fatih
+qmk compile -kb kinesis/kint41 -km rudihermanto
 
 # flash the layout with our layout
-teensy_loader_cli -w -v  --mcu=TEENSY41 .build/kinesis_kint41_fatih.hex
+teensy_loader_cli -w -v  --mcu=TEENSY41 .build/kinesis_kint41_rudihermanto.hex
 
 ```
 
