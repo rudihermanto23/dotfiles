@@ -53,6 +53,7 @@ bind-key -n C-S-Right swap-window -t +1
 # Source file
 unbind r
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
+if-shell "test -f ~/.tmux/tmux-dark.conf" "source ~/.tmux/tmux-dark.conf"
 
 # Use vim keybindings in copy mode
 setw -g mode-keys vi

@@ -125,7 +125,7 @@ function! ChangeBackground()
   if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark   " for dark version of theme
   else
-    set background=light  " for light version of theme
+    set background=dark  " for light version of theme
   endif
   colorscheme gruvbox
 
