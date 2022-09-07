@@ -16,6 +16,7 @@ Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
 Plug 'elzr/vim-json', {'for' : 'json'}
 Plug 'ervandew/supertab'
 Plug 'gruvbox-community/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
@@ -127,7 +128,7 @@ function! ChangeBackground()
   else
     set background=dark  " for light version of theme
   endif
-  colorscheme gruvbox
+  colorscheme palenight
 
   try
     execute "AirlineRefresh"
@@ -173,7 +174,7 @@ let g:tmuxline_preset = {
       \'cwin' : '#I #W',
       \'x'    : '%a',
       \'y'    : '%Y-%m-%d %H:%M',
-      \'z'    : ' #h',
+      \'z'    : '',
       \'options' : {'status-justify' : 'left', 'status-position' : 'top'}}
 
 let g:tmuxline_powerline_separators = 0

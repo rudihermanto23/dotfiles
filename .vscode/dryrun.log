@@ -1,0 +1,21 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/rudihermanto/dotfiles'
+mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/fish
+mkdir -p ~/.tmux/
+[ -f ~/.config/alacritty/alacritty.yml ] || ln -s /Users/rudihermanto/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+[ -f ~/.config/alacritty/color.yml ] || ln -s /Users/rudihermanto/dotfiles/color.yml ~/.config/alacritty/color.yml
+[ -f ~/.config/fish/config.fish ] || ln -s /Users/rudihermanto/dotfiles/config.fish ~/.config/fish/config.fish
+[ -d ~/.config/fish/functions/ ] || ln -s /Users/rudihermanto/dotfiles/fish/functions ~/.config/fish/functions
+[ -f ~/.vimrc ] || ln -s /Users/rudihermanto/dotfiles/vimrc ~/.vimrc
+[ -f ~/.tmux.conf ] || ln -s /Users/rudihermanto/dotfiles/tmuxconf ~/.tmux.conf
+[ -f ~/.tmux/tmux-dark.conf ] || ln -s /Users/rudihermanto/dotfiles/tmux-dark.conf ~/.tmux/tmux-dark.conf
+[ -f ~/.tmux/tmux-light.conf ] || ln -s /Users/rudihermanto/dotfiles/tmux-light.conf ~/.tmux/tmux-light.conf
+[ -f ~/.tigrc ] || ln -s /Users/rudihermanto/dotfiles/tigrc ~/.tigrc
+[ -f ~/.gitconfig ] || ln -s /Users/rudihermanto/dotfiles/gitconfig ~/.gitconfig
+[ -f ~/.agignore ] || ln -s /Users/rudihermanto/dotfiles/agignore ~/.agignore
+[ -f ~/Library/LaunchAgents/io.arslan.dark-mode-notify.plist ] || ln -s /Users/rudihermanto/dotfiles/io.arslan.dark-mode-notify.plist ~/Library/LaunchAgents/io.arslan.dark-mode-notify.plist
+# don't show last login message
+touch ~/.hushlogin
+make: Leaving directory `/Users/rudihermanto/dotfiles'
+ 
