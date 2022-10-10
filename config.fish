@@ -3,18 +3,19 @@ set -gx GOPATH $HOME/go
 set -gx GOBIN $HOME/go/bin
 set -gx EDITOR vim
 set -gx GOPRIVATE go.bukalapak.io
+set -gx NVM_DIR $HOME/.nvm
 
 if test (arch) = i386
     set HOMEBREW_PREFIX /usr/local
 
-    source /usr/local/share/chruby/chruby.fish
-    source /usr/local/share/chruby/auto.fish
-    chruby system
+    source /usr/local/opt/asdf/libexec/asdf.fish
 else
     set HOMEBREW_PREFIX /opt/homebrew
 
     # openvpn
     fish_add_path --path /opt/homebrew/opt/openvpn/sbin
+
+    source /opt/homebrew/opt/asdf/libexec/asdf.fish
 end
 
 # Add the Homebrew prefix to $PATH. -m flag ensures it's at the beginning
