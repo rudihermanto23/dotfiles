@@ -6,6 +6,11 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# costume env
+export GOPATH="$HOME/go"
+export GOBIN="$HOME/go/bin"
+export GOPRIVATE="go.bukalapak.io"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

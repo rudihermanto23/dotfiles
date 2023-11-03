@@ -6,6 +6,7 @@ mkdir -p ~/.tmux/
 [ -f ~/.config/alacritty/alacritty.yml ] || ln -s /Users/rudihermanto/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 [ -f ~/.config/alacritty/color.yml ] || ln -s /Users/rudihermanto/dotfiles/color.yml ~/.config/alacritty/color.yml
 [ -f ~/.config/fish/config.fish ] || ln -s /Users/rudihermanto/dotfiles/config.fish ~/.config/fish/config.fish
+[ -f ~/.zshrc ] || ln -s /Users/rudihermanto/dotfiles/zshrc ~/.zshrc
 [ -d ~/.config/fish/functions/ ] || ln -s /Users/rudihermanto/dotfiles/fish/functions ~/.config/fish/functions
 [ -f ~/.vimrc ] || ln -s /Users/rudihermanto/dotfiles/vimrc ~/.vimrc
 [ -f ~/.tmux.conf ] || ln -s /Users/rudihermanto/dotfiles/tmuxconf ~/.tmux.conf
